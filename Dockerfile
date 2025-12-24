@@ -1,10 +1,8 @@
 FROM node:20-alpine
 
-WORKDIR /calculator
+WORKDIR /Calci
 
-COPY server.js .
 COPY calculator.html .
 
-EXPOSE 5000
+COPY server.js
 
-CMD ["node", "server.js"]
